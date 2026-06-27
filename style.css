@@ -117,7 +117,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 14px;
   cursor: pointer;
   transition: border-color .18s, background .18s, transform .08s;
   padding: 16px 12px;
@@ -205,9 +205,9 @@ header {
 }
 
 /* ── Card content ──────────────────────────────────────── */
-.card-icon   { font-size: 3.8rem; line-height: 1; transition: color .2s; }
-.card-label  { font-size: .9rem; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase; }
-.card-status { font-size: .62rem; font-weight: 600; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; }
+.card-icon   { font-size: 6rem; line-height: 1; transition: color .2s; }
+.card-label  { font-size: 1.05rem; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase; }
+.card-status { font-size: .75rem; font-weight: 600; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; }
 
 /* ── Info bar ──────────────────────────────────────────── */
 .info-bar {
@@ -268,18 +268,18 @@ header {
   }
 
   /* Smaller text & icons so cards don't clip in landscape */
-  .card-icon  { font-size: 2rem; }
-  .card-label { font-size: .76rem; letter-spacing: 1.5px; }
-  .card-status { font-size: .6rem; }
-  .card       { gap: 6px; padding: 10px 8px; }
+  .card-icon  { font-size: 3.2rem; }
+  .card-label { font-size: .85rem; letter-spacing: 1.5px; }
+  .card-status { font-size: .68rem; }
+  .card       { gap: 8px; padding: 10px 8px; }
 
   .ring-svg { width: 28px; height: 28px; top: 7px; right: 8px; }
 }
 
 /* ── Very small landscape (phones) — reduce further ── */
 @media (orientation: landscape) and (max-width: 599px) {
-  .card-icon  { font-size: 1.6rem; }
-  .card-label { font-size: .72rem; }
+  .card-icon  { font-size: 2rem; }
+  .card-label { font-size: .75rem; }
   header      { padding-bottom: 6px; margin-bottom: 6px; }
   .header-left{ font-size: .8rem; }
   .grid       { gap: 8px; }
@@ -288,7 +288,7 @@ header {
 
 /* ── Portrait phone — make sure nothing clips ── */
 @media (max-width: 380px) {
-  .card-icon  { font-size: 2rem; }
-  .card-label { font-size: .78rem; }
+  .card-icon  { font-size: 3rem; }
+  .card-label { font-size: .85rem; }
   .header-left{ font-size: .88rem; }
 }
